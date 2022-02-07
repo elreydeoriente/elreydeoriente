@@ -1,0 +1,19 @@
+.background{
+    background: url("../images/Pomeranian.jpg") center/cover no-repeat;
+    opacity:0.5;
+}
+
+.header-title{
+    color:   color: #808080; 
+    
+    
+}
+
+.services-header{
+    position: relative;
+}
+@media(min-width: 40rem){
+    .background{
+        background-position: 10% 20%;
+    }
+}

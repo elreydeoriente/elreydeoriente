@@ -1,0 +1,24 @@
+*{
+ box-sizing: border-box;   
+}
+
+
+
+.background{
+ 
+    background: url('../images/about-header-background.png') center / cover no-repeat; /*center/cover no-repeat border-box;*/
+    opacity:0.6;
+}
+
+.header-title{
+    color: #808080; 
+}
+.about-header{
+    position:relative;
+}
+
+@media(min-width: 40rem){
+    .background{
+        background-position: 0% 5%;
+    }
+}

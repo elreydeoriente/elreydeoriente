@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin: 0;
+    border: 0;
+}
+
+.main-header{
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    margin-right: 1rem;
+}
+
+.background{
+    background: url("vetclinic.jpg") center/cover no-repeat;
+    
+}
+
+.introduction{
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom:  1px solid black;
+    margin: 8px;
+    font-size: 1.2rem;    
+}
+
+.introduction h1{
+    color: 	#6495ed;
+}
+
+.introduction p{
+    color: #808080;
+}
+
+.thumbnail-container{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: pink;
+    overflow: hidden;
+   
+}
+
+img{
+    height: 100%;
+    width: 100%;   
+}
+/* 
+.section:hover{
+    cursor: pointer;
+    background-color: yellow;
+} */
+
+.appointments{
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: 0px 20px 0px 20px;
+    background-color: #c7e9e5;
+    margin: 8px;
+    padding: 8px;
+}
+
+.schedule{
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: 0px 20px 0px 20px;
+    background-color: #c7e9e5;
+    margin: 8px;
+    padding: 8px;
+}
+
+.doctors{
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: 0px 20px 0px 20px;
+    background-color: #c7e9e5;
+    margin: 8px;
+    padding: 8px;
+}
+
+
+.module2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ 
+}
+
+
+.toggle-button{
+    width: 32px;
+    cursor: pointer;
+    
+}
+
+.toggle-button__line{
+    height: 2px;
+    width: 25px;
+    background-color: black;
+    margin: 5px;
+    
+}
+.main-menu{
+    display: none;
+    padding: 0;
+}
+.main-menu__item{
+    list-style: none;
+    margin: 0px 5px 0px 5px;
+}
+
+.mobile-menu{
+    opacity:0;
+    transform: translateX(-640px);
+    transition: opacity 200ms, transform 200ms;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 80vw;
+    z-index: 0;
+    background-color: pink;
+}
+
+.mobile-menu__list{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;    
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.open{
+    opacity: 1 !important;
+    transform: translateX(0)!important;
+}
+
+.book-a-visit{
+
+    text-align: center;
+    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 1px solid black;
+}
+
+.btn{
+   
+    padding: 2rem;
+    margin-top: 1rem;
+    background-color: #ff3333;
+    box-shadow: 3px 3px 8px gray;
+    font: bold 1rem raleway;
+    font-size: 1.2rem;
+    color: white;  
+}
+
+
+footer{
+    border-top: 1px solid gray;
+    margin: 8px;
+   
+}
+
+.footer-items{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin:0;
+  padding: 10px;
+
+}
+
+.footer-item{
+    margin: 5px;   
+  }
+
+
+  /*DESKTOP*/
+
+@media(min-width: 40rem){
+    .background{
+    
+    }
+
+    main{
+        width: 60vw;
+        margin: auto;
+    }
+
+    .introduction{
+        font-size: 1.8rem;
+    }
+
+.module2{
+    flex-direction: row;
+  }
+}
+
+.appointments, .schedule, .doctors{
+    flex: 1 1 33.33%;
+} 
+
+
+
